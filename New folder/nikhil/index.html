@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .flex2{
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+        header, aside, main{
+            border: 1px solid black;
+        }
+        aside{
+            flex-grow: 1;
+            height: 100vh;
+            background-color: skyblue;
+        }
+        main{
+            flex-grow: 3;
+            height: 100vh;
+            background-color: gray;
+
+        }
+         
+        /*header{
+            height: 70px;
+            width: 100%;
+            background-color: #f5c2c2;
+        }
+        aside{
+            width: 150px;
+            background-color: #ea5f5f;
+            height: calc(100vh - 70px);
+        }
+        main{
+            width: calc(100vw - 370px);
+            background-color: pink;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="flex2">
+            <aside>aside 1</aside>
+        <main>main content</main>
+        <aside>aside 2</aside>
+        </div>
+
+    </div>
+</body>
+</html>

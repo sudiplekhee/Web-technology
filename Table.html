@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Website</title>
+    <style>
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e9f8ff, #d2efff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Table Container */
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Table Header */
+th {
+    background-color: #007acc;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: left;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #005b99;
+}
+
+/* Table Rows */
+td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1em;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Row Hover Effect */
+tr:hover td {
+    background-color: #f4f9ff;
+    transform: scale(1.02);
+}
+
+/* Highlighting Alternate Rows */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 0.9em;
+    }
+}
+
+/* Styling Links */
+td a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+td a:hover {
+    color: #005b99;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Occupation</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Sudip chaudhary</td>
+            <td>Sudipchy@gmail.com</td>
+            <td>+977 9821580712</td>
+            <td>Itahari-16.Sunsari</td>
+            <td>Data Analyst</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Manish chaudhary</td>
+            <td>Manishchy@gmail.com</td>
+            <td>+977 9800976376</td>
+            <td>Itahari-15.Sunsari</td>
+            <td>Graphic Designer</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Anurag chaudhary</td>
+            <td>Anuragchy@gmail.com</td>
+            <td>+977 9821567543</td>
+            <td>Ramdhuni-1.Sunsari</td>
+            <td>Computer Science</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Bishal chaudhary</td>
+            <td>Bishalchy@gmail.com</td>
+            <td>+977 9821580987</td>
+            <td>Ramdhuni-5.Sunsari</td>
+            <td>Software Developer</td>
+            <td>20</td>
+        </tr>
+    </table>
+</body>
+</html>

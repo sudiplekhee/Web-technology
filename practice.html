@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        
+       .navbar li{
+        float:left;
+        margin:4px 10px;
+        list-style:none;
+       }
+       .navbar li a{
+        text-decoration:none;
+        padding: 4px 4px;
+        color: brown;
+       }
+       .navbar li a:hover{
+        color:blue;
+       }
+.search{
+    float: right;
+  padding-right: 10px; 
+}
+.navbar .logo img {
+    height: 40px; /* Set height of the logo */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 15px; /* Add space between logo and links */
+  }
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <ul>
+            <li class="logo">
+                <a href="#home"><img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="Logo"></a>
+              </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact us</a></li>
+            <nav class="search">
+                <input type="text" class="text" placeholder="Search your website">
+            </nav>
+        </ul>
+    </nav>
+   </header>
+
+</body>
+</html>
